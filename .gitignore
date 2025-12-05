@@ -1,0 +1,151 @@
+# Shortlink Kay v1 - Git Ignore File
+
+# ============================================
+# ENVIRONMENT & CONFIGURATION
+# ============================================
+.env
+.env.local
+.env.*.local
+.env.production
+config.php.local
+
+# ============================================
+# LOGS
+# ============================================
+storage/logs/*
+!storage/logs/.gitkeep
+*.log
+logs/
+
+# ============================================
+# CACHE
+# ============================================
+storage/cache/*
+!storage/cache/.gitkeep
+.cache/
+*.cache
+
+# ============================================
+# TEMPORARY FILES
+# ============================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================
+# IDE & EDITOR
+# ============================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.phpstorm.meta.php
+_ide_helper.php
+.editorconfig
+
+# ============================================
+# OPERATING SYSTEM
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# ============================================
+# DEVELOPMENT TOOLS
+# ============================================
+node_modules/
+vendor/
+composer.lock
+package-lock.json
+yarn.lock
+
+# ============================================
+# BACKUP FILES
+# ============================================
+*.bak
+*.backup
+*.sql.bak
+*.sql.backup
+backup/
+backups/
+
+# ============================================
+# DATABASE DUMPS
+# ============================================
+*.sql
+!database.sql
+dump.sql
+database_backup.sql
+
+# ============================================
+# UPLOADS & USER FILES
+# ============================================
+uploads/
+media/
+files/
+public/uploads/*
+!public/uploads/.gitkeep
+
+# ============================================
+# TESTING
+# ============================================
+tests/coverage/
+.phpunit.result.cache
+phpunit.xml.dist
+
+# ============================================
+# SECURITY
+# ============================================
+.htpasswd
+.htaccess.local
+private_key*
+*.pem
+*.key
+*.crt
+*.cer
+
+# ============================================
+# DOCKER (jika menggunakan)
+# ============================================
+.dockerignore
+docker-compose.override.yml
+
+# ============================================
+# BUILD & DISTRIBUTION
+# ============================================
+dist/
+build/
+*.zip
+*.tar.gz
+*.rar
+
+# ============================================
+# MISC
+# ============================================
+.env.example.local
+.vscode-settings.json
+.project
+.classpath
+.c9/
+*.class
+*.jar
+*.exe
+*.o
+*.so
+
+# ============================================
+# ALLOW SPECIFIC FILES
+# ============================================
+!.gitkeep
+!.env.example
+!.htaccess
+!nginx.conf
+!database.sql
