@@ -1,0 +1,258 @@
+# Shortlink Kay v1 - System Requirements
+# File ini mendokumentasikan semua dependencies yang diperlukan
+
+# ============================================
+# OPERATING SYSTEM
+# ============================================
+# Ubuntu LTS 24.04.3 (x86_64) atau lebih baru
+# Kernel: 6.8.0 atau lebih baru
+
+# ============================================
+# WEB SERVER
+# ============================================
+# Nginx 1.24.0 atau lebih baru
+# - HTTP/2 support
+# - SSL/TLS support
+# - FastCGI caching support
+
+# ============================================
+# PHP
+# ============================================
+# PHP 8.3 atau lebih baru (PHP 8.2 juga supported)
+
+# Required PHP Extensions:
+# - php8.3-cli (command line interface)
+# - php8.3-fpm (FastCGI Process Manager)
+# - php8.3-mysql (MySQL/MariaDB driver)
+# - php8.3-pdo (PHP Data Objects)
+# - php8.3-json (JSON support)
+# - php8.3-curl (cURL support)
+# - php8.3-gd (Image processing)
+# - php8.3-mbstring (Multibyte string)
+# - php8.3-xml (XML support)
+# - php8.3-zip (ZIP support)
+
+# Optional PHP Extensions:
+# - php8.3-redis (Redis caching)
+# - php8.3-memcached (Memcached caching)
+# - php8.3-imagick (Advanced image processing)
+
+# ============================================
+# DATABASE
+# ============================================
+# MySQL 8.0+ atau MariaDB 10.11.10+
+# - InnoDB engine
+# - UTF-8mb4 charset support
+# - Prepared statements support
+
+# ============================================
+# TOOLS & UTILITIES
+# ============================================
+# Git 2.34+ (untuk deployment)
+# Composer (optional, jika menggunakan dependencies)
+# curl (untuk testing API)
+# wget (untuk downloading files)
+
+# ============================================
+# SYSTEM LIBRARIES (Ubuntu 24.04)
+# ============================================
+# build-essential
+# libssl-dev
+# libcurl4-openssl-dev
+# libjpeg-dev
+# libpng-dev
+# libfreetype6-dev
+# zlib1g-dev
+
+# ============================================
+# INSTALLATION COMMANDS (Ubuntu 24.04)
+# ============================================
+
+# Update system
+# sudo apt update && sudo apt upgrade -y
+
+# Install Nginx
+# sudo apt install nginx -y
+
+# Install PHP 8.3 dan extensions
+# sudo apt install php8.3 php8.3-cli php8.3-fpm php8.3-mysql php8.3-pdo php8.3-json php8.3-curl php8.3-gd php8.3-mbstring php8.3-xml php8.3-zip -y
+
+# Install MySQL/MariaDB
+# sudo apt install mariadb-server -y
+
+# Install Git
+# sudo apt install git -y
+
+# Install utilities
+# sudo apt install curl wget build-essential -y
+
+# ============================================
+# VERIFICATION COMMANDS
+# ============================================
+
+# Check PHP version
+# php -v
+
+# Check PHP extensions
+# php -m | grep -E 'pdo|mysql|json|curl'
+
+# Check Nginx version
+# nginx -v
+
+# Check MySQL version
+# mysql --version
+
+# Check Git version
+# git --version
+
+# ============================================
+# DEVELOPMENT ENVIRONMENT (Local)
+# ============================================
+
+# Windows:
+# - PHP 8.3 (via XAMPP, Laragon, atau standalone)
+# - MySQL/MariaDB (via XAMPP atau standalone)
+# - Nginx (optional, bisa pakai Apache dari XAMPP)
+# - Git for Windows
+# - Visual Studio Code atau editor lainnya
+
+# macOS:
+# - PHP 8.3 (via Homebrew)
+# - MySQL/MariaDB (via Homebrew)
+# - Nginx (via Homebrew)
+# - Git (via Homebrew atau Xcode Command Line Tools)
+# - Visual Studio Code atau editor lainnya
+
+# Linux (Ubuntu/Debian):
+# - Ikuti installation commands di atas
+# - Visual Studio Code atau editor lainnya
+
+# ============================================
+# PRODUCTION ENVIRONMENT (VPS)
+# ============================================
+
+# Server: 202.10.37.31
+# Domain: kanyaars.cloud
+# OS: Ubuntu LTS 24.04.3
+# Web Server: Nginx 1.24.0
+# PHP: 8.3
+# Database: MariaDB 10.11.10
+# FTP: Pure-Ftpd 1.0.49
+# Control Panel: aaPanel (optional)
+
+# ============================================
+# MINIMUM SYSTEM REQUIREMENTS
+# ============================================
+
+# CPU: 1 Core (minimum), 2+ Cores recommended
+# RAM: 512 MB (minimum), 1 GB+ recommended
+# Storage: 10 GB (minimum), 50 GB+ recommended
+# Bandwidth: Unlimited atau 100 GB+/month
+
+# ============================================
+# RECOMMENDED SYSTEM REQUIREMENTS
+# ============================================
+
+# CPU: 2+ Cores
+# RAM: 2 GB+
+# Storage: 50 GB+
+# Bandwidth: Unlimited
+
+# ============================================
+# SECURITY REQUIREMENTS
+# ============================================
+
+# SSL/TLS Certificate (Let's Encrypt)
+# Firewall (UFW atau iptables)
+# Fail2Ban (untuk brute force protection)
+# Regular backups
+# SSH key authentication (no password login)
+
+# ============================================
+# PERFORMANCE OPTIMIZATION
+# ============================================
+
+# Nginx FastCGI caching
+# PHP OPcache
+# Database query optimization
+# Gzip compression
+# Static file caching
+# CDN (optional)
+
+# ============================================
+# MONITORING & LOGGING
+# ============================================
+
+# Nginx access/error logs
+# PHP-FPM error logs
+# MySQL error logs
+# Application logs
+# System logs (syslog)
+
+# ============================================
+# BACKUP & DISASTER RECOVERY
+# ============================================
+
+# Daily database backups
+# Weekly application backups
+# Off-site backup storage
+# Backup retention: 30 days minimum
+# Recovery time objective (RTO): 1 hour
+# Recovery point objective (RPO): 1 day
+
+# ============================================
+# VERSION COMPATIBILITY MATRIX
+# ============================================
+
+# PHP 8.3 ✅ (Recommended)
+# PHP 8.2 ✅ (Supported)
+# PHP 8.1 ⚠️ (Legacy, not recommended)
+# PHP 8.0 ❌ (Not supported)
+# PHP 7.x ❌ (Not supported)
+
+# MySQL 8.0+ ✅ (Recommended)
+# MariaDB 10.11+ ✅ (Recommended)
+# MariaDB 10.5+ ✅ (Supported)
+# MySQL 5.7 ⚠️ (Legacy, not recommended)
+
+# Nginx 1.24+ ✅ (Recommended)
+# Nginx 1.20+ ✅ (Supported)
+# Nginx 1.18 ⚠️ (Legacy, not recommended)
+
+# ============================================
+# DEPRECATED & UNSUPPORTED
+# ============================================
+
+# ❌ PHP 7.x (End of life)
+# ❌ MySQL 5.6 (End of life)
+# ❌ Apache (not supported, use Nginx)
+# ❌ Windows Server (not supported, use Linux)
+
+# ============================================
+# NOTES
+# ============================================
+
+# 1. Selalu gunakan PHP 8.3 atau lebih baru
+# 2. Gunakan MariaDB 10.11+ untuk performa terbaik
+# 3. Enable SSL/TLS untuk production
+# 4. Setup firewall dan fail2ban
+# 5. Backup database secara regular
+# 6. Monitor logs untuk security issues
+# 7. Update system packages secara berkala
+# 8. Gunakan strong passwords
+# 9. Disable root login via SSH
+# 10. Setup automated backups
+
+# ============================================
+# SUPPORT & DOCUMENTATION
+# ============================================
+
+# PHP Documentation: https://www.php.net/docs.php
+# MySQL Documentation: https://dev.mysql.com/doc/
+# MariaDB Documentation: https://mariadb.com/kb/
+# Nginx Documentation: https://nginx.org/en/docs/
+# Ubuntu Documentation: https://ubuntu.com/server/docs
+
+# ============================================
+# END OF REQUIREMENTS
+# ============================================
